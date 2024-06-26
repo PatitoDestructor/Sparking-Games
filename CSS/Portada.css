@@ -1,0 +1,313 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23ff0000' fill-opacity='0.35'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    color: white;
+    font-size: 16px;
+    font-family: 'Stick No Bills', sans-serif;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.contenedor{
+    width: 90%;
+    margin: auto;
+    display: block;
+}
+
+/* Navegacion */
+
+.navegador{
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+}
+
+.nav-logo{
+    width: 50px;
+}
+
+
+/*Navegacion izquierda*/
+
+.navegador ul {
+    display: flex;
+}
+
+.navegador ul li {
+    padding: 10px;
+}
+
+.navegador ul li a{
+    padding: 6px;
+}
+
+.navegador ul li a:hover {
+    border-bottom: 2px solid rgb(165, 19, 19);
+}
+
+.navegador ul.nav-menu {
+    flex: 1;
+    margin-left: 10px;
+
+}
+
+/*Barra de busqueda*/
+.inputsearch {
+	font:inherit;
+    height: 15px;
+}
+.search {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+    
+}
+.formsearch {
+	margin: auto;
+}
+.formsearch > .divsearch {
+	display: flex;
+	background:#fff;
+	padding: 9px 22px 9px 26px;
+	border-radius: 30px;
+	border:2px solid #cad3dc;
+	box-shadow: rgba(255, 255, 255, 0.5) -8px -8px 15px,
+		rgba(0, 0, 0, 0.1) 10px 10px 10px,
+		rgba(255, 255, 255, 0.5) -8px -8px 15px inset,
+		rgba(0, 0, 0, 0.1) 10px 10px 10px inset;
+    color: #000000;
+}
+.formsearch .inputsearch {
+	border:none;
+	background: transparent;
+	padding-left: 24px;
+	background-size: 16px;
+	background-repeat: no-repeat;
+	width: 0px;
+	transition: all 1s;
+}
+.formsearch .inputsearch:focus {
+	outline: none;
+	width: 200px;
+}
+
+/*Portada*/
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: #332f2f;
+    background-size: cover;
+    background-position: center;
+    transition: all .1s ease-in-out;
+    background-image: url(../Media/IMG/portada05.jpg);
+    animation: banner 28s infinite linear;
+}
+
+.banner-content{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: #000000;
+    background-color: rgba(128, 97, 97, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content h1{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 15px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.banner-content p{
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+
+.banner-content a{
+    text-decoration: none;
+    color: black;
+    padding: 9px 20px;
+    transition: all .3s ease-in-out;
+    background-color: #cc2b2b;
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background:rgb(167, 51, 51);
+    color: white;
+    font-size: 15px;
+    border: 1px solid white;
+    margin: 10px 0;
+}
+
+.banner-content a:hover{
+    background-color: rgb(255, 246, 246);
+    color: #cc2b2b;
+    box-shadow: 0 0 5px rgb(243, 2, 2),
+    0 0 10px rgb(252, 0, 0),
+    0 0 20px rgb(255, 0, 0),
+    0 0 40px rgb(160, 38, 38),
+    0 0 80px rgb(168, 34, 34),
+    0 0 90px rgb(158, 36, 36),
+    0 0 100px rgb(127, 38, 38),
+    0 0 140px rgb(127, 38, 38),
+    0 0 180px rgb(127, 38, 38);
+}
+
+@keyframes banner{
+    0%{
+        background-image: url(../Media/IMG/portada05.jpg);
+    }
+    25%{
+        background-image: url(../Media/IMG/portada05.jpg);
+    }
+    26%{
+        background-image: url(../Media/IMG/portada01.jpg);
+    }
+    50%{
+        background-image: url(../Media/IMG/portada01.jpg);
+    }
+    51%{
+        background-image: url(../Media/IMG/portada3.jpg);
+    }
+    75%{
+        background-image: url(../Media/IMG/portada3.jpg);
+    }
+    76%{
+        background-image: url(../Media/IMG/portada04.jpg);
+    }
+    100%{
+        background-image: url(../Media/IMG/portada04.jpg);
+    }
+
+}
+
+/*Footer*/
+
+.pie-pagina{
+    width: 100%;
+    background-color: black;
+}
+
+.logo{
+    width: 200px;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 40px;
+}
+
+.pie-pagina .grupo-1 .box p{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .redsocial i{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 35px;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .redsocial i:hover{
+    color: #cc2b2b;
+    font-size: 50px;
+}
+
+.pie-pagina .grupo-2{
+    background-color: #000000;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+.box a{
+    color: #cc2b2b;
+}
+
+.box a:hover{
+    transition: 300ms ease;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #000000;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent, #cc2b2b);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent, red);
+}

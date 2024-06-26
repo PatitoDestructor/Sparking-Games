@@ -1,0 +1,276 @@
+body{
+    min-height: 1000px;
+}
+
+/*Mural*/
+header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: 1s;
+}
+
+header.animacion{
+    height: 150px;
+}
+
+header .bannerh{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+    opacity: 0.5;
+}
+
+header.animacion .bannerh{
+    opacity: 0.5;
+}
+
+header .logoh{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5vw;
+    color: white;
+    transition: 1s;
+    z-index: 1;
+}
+
+header.animacion .logoh{
+    position: absolute;
+    font-size: 2em;
+    left: 100px;
+    transform: translate(0, -570%);
+}
+
+.contenedorG{
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.671);
+    text-align: center;
+    padding: 30px;
+    Word-wrap: break-Word;
+
+
+}
+
+
+/*Creador*/
+.creador{
+    margin-left: 700px;
+}
+.creador h1{
+    font-size: 20px;
+    font-weight: none;
+    color: brown;
+}
+
+.fotoU{
+    height: auto;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: -18px;
+    position: relative;
+    left: 75px;
+    bottom: 28px;
+}
+
+.creador p{
+    position: relative;
+    left: 155px;
+    bottom: 57px;
+}
+
+
+/*Sinopsis*/
+.sinopsis h1{
+    color: brown;
+    font-size: 50px;
+}
+
+.sinopsis p{
+    font-size: 18px;
+}
+
+/*Contenido*/
+.contenido h1{
+    color: brown;
+    font-size: 50px;
+}
+
+.contenido{
+    margin-bottom: 100px;
+}
+
+/*Comentarios*/
+
+.comentario{
+    text-align: start;
+    margin-top: 15px;
+    padding: 50px;
+}
+
+.comentario img{
+    position: relative;
+    width: 45px;
+    top: 15px;
+}
+
+#comentarios h1{
+    border-bottom: 2px solid white;
+    color: brown;
+    height: 65px;
+}
+
+/*Input*/
+.input {
+    background-color: #212121;
+    width: 500px;
+    height: 40px;
+    padding: 10px;
+    /* text-align: center; */
+    border: 2px solid white;
+    border-radius: 5px;
+    /* box-shadow: 3px 3px 2px rgb(249, 255, 85); */
+}
+
+.input:focus {
+    color: brown;
+    background-color: #212121;
+    outline-color: brown;
+    box-shadow: -3px -3px 15px brown;
+    transition: .1s;
+    transition-property: box-shadow;
+}
+
+/*Boton*/
+button {
+    font-family: inherit;
+    font-size: 20px;
+    background: brown;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+    position: relative;
+    left: 560px;
+    bottom: 45px;
+}
+
+button .svg-wrapper-1{
+    height: 1px;
+    margin-bottom: 22px;
+}
+
+button .svg-wrapper{
+    margin-bottom: 0px;
+    height: 1px;
+}
+
+button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+
+button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+button:hover span {
+    transform: translateX(5em);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+    from {
+    transform: translateY(0.1em);
+    }
+
+    to {
+    transform: translateY(-0.1em);
+    }
+}
+
+
+/*Comunidad*/
+.comunidad{
+    text-align: start;
+    padding: 50px;
+    margin-top: -180px;
+}
+
+.comunidad h3{
+    color: brown;
+}
+
+.vaciocomentario{
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 280px;
+    background-color: brown;
+    height: 60px;
+    width: 500px;
+    border-radius: 15px ;
+}
+
+.comentarioP{
+    margin-bottom: 20px;
+    width: 590px;
+}
+
+.comentarioP img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.comentarioP small{
+    position: relative;
+    bottom: 25px;
+    left: 7px;
+}
+
+.comentarioP p{
+    position: relative;
+    bottom: 25px;
+    left: 55px;
+    Word-wrap: break-Word;
+}
+
+.botones{
+    width: 50px;
+    position: relative;
+    left: 670px;
+    bottom: 50px;
+}
+
+.botones i{
+    color: brown;
+}

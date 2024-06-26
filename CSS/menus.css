@@ -1,0 +1,60 @@
+/*Cuenta*/
+.menu-vertical{
+    position: absolute;
+    visibility: hidden;
+    list-style: none;
+    width: 250px;
+    background-color: rgba(0, 0, 0, .8);
+    top: 60px;
+    left: 950px;
+}
+
+.menu-vertical-ver{
+    position: absolute;
+    visibility: visible;
+    list-style: none;
+    width: 300px;
+    background-color: rgba(0, 0, 0, .8);
+    top: 60px;
+    left: 1040px;
+}
+
+/*Administracion*/
+.menu-vertical2{
+    position: absolute;
+    visibility: hidden;
+    list-style: none;
+    width: 190px;
+    background-color: rgba(0, 0, 0, .8);
+    top: 60px;
+    left: 660px;
+}
+
+.menu-vertical2-ver{
+    position: absolute;
+    visibility: visible;
+    list-style: none;
+    width: 220px;
+    background-color: rgba(0, 0, 0, .8);
+    top: 60px;
+    left: 660px;
+}
+
+
+.fotoperfil{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: -18px;
+}
+
+.fotoinvitado{
+    height: 27px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: -18px;
+}
+
+.fa-crown{
+    color: yellow;
+}

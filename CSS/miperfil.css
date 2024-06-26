@@ -1,0 +1,287 @@
+.seccion-perfil-usuario .perfil-usuario-body,
+.seccion-perfil-usuario {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seccion-perfil-usuario .perfil-usuario-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#B873FF, transparent);
+    margin-bottom: 1.25rem;
+}
+
+.seccion-perfil-usuario .perfil-usuario-portada {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 28rem;
+    background-image: url(../Media/IMG/fonfoperfil.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 0 20px 20px;
+}
+
+.imgperfil{
+    width: 160px;
+    height: 160px;
+}
+
+.corona{
+    width: 80%;
+    height: 10px;
+}
+
+.seccion-perfil-usuario .perfil-usuario-portada .boton-portada {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: 0;
+    border-radius: 8px;
+    padding: 12px 25px;
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+}
+
+.seccion-perfil-usuario .perfil-usuario-portada .boton-portada i {
+    margin-right: 1rem;
+}
+
+.seccion-perfil-usuario .perfil-usuario-avatar {
+    display: flex;
+    width: 180px;
+    height: 180px;
+    align-items: center;
+    justify-content: center;
+    border: 7px solid brown;
+    background-color: black;
+    border-radius: 50%;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+    position: absolute;
+    bottom: -40px;
+    left: calc(50% - 90px);
+    z-index: 1;
+}
+
+.seccion-perfil-usuario .perfil-usuario-avatar img {
+    width: 100%;
+    position: relative;
+    border-radius: 50%;
+}
+
+.seccion-perfil-usuario .perfil-usuario-avatar .boton-avatar {
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    border: 0;
+    background-color: black;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: brown;
+}
+
+.seccion-perfil-usuario .perfil-usuario-body .titulo {
+    display: block;
+    width: 100%;
+    font-size: 1.75em;
+    margin-bottom: 0.5rem;
+}
+
+.seccion-perfil-usuario .perfil-usuario-body .texto {
+    color: #848484;
+    font-size: 0.95em;
+}
+
+.seccion-perfil-usuario .perfil-usuario-footer,
+.seccion-perfil-usuario .perfil-usuario-bio {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+    background-color: rgba(0, 0, 0, 0.705);
+    border-radius: 15px;
+    width: 110%;
+}
+
+.seccion-perfil-usuario .perfil-usuario-bio {
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+
+.seccion-perfil-usuario .lista-datos {
+    width: 50%;
+    list-style: none;
+}
+
+.seccion-perfil-usuario .lista-datos li {
+    padding: 5px 0;
+}
+
+.seccion-perfil-usuario .lista-datos li>.icono {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+/*Boton eliminar*/
+.tooltip{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 1em;
+border: 0px solid transparent;
+background-color: rgba(165, 42, 42, 0.514);
+border-radius: 1.25em;
+transition: all 0.2s linear;
+cursor: pointer;
+left: 70px;
+border-radius: 50px;
+}
+
+.tooltip:hover {
+box-shadow: 3.4px 2.5px 4.9px rgba(0, 0, 0, 0.025),
+    8.6px 6.3px 12.4px rgba(0, 0, 0, 0.035),
+    17.5px 12.8px 25.3px rgba(0, 0, 0, 0.045),
+    36.1px 26.3px 52.2px rgba(0, 0, 0, 0.055),
+    99px 72px 143px rgba(0, 0, 0, 0.08);
+}
+
+.tooltip {
+position: relative;
+display: inline-block;
+}
+
+.tooltip .tooltiptext {
+visibility: hidden;
+width: 4em;
+background-color: rgba(0, 0, 0, 0.253);
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 5px 0;
+position: absolute;
+z-index: 1;
+top: 100%;
+left: 90%;
+}
+
+.tooltip .tooltiptext::after {
+content: "";
+position: absolute;
+top: 50%;
+right: 100%;
+margin-top: -5px;
+border-width: 5px;
+border-style: solid;
+border-color: transparent rgba(0, 0, 0, 0.253) transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+visibility: visible;
+}
+
+/*Boton editar*/
+.among {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+padding: 0 10px;
+color: white;
+text-shadow: 2px 2px rgb(116, 116, 116);
+text-transform: uppercase;
+border: solid 2px black;
+letter-spacing: 1px;
+font-weight: 600;
+font-size: 17px;
+background-color: hsl(49deg 98% 60%);
+border-radius: 50px;
+position: relative;
+overflow: hidden;
+transition: all .5s ease;
+cursor: pointer;
+}
+
+.among:active {
+transform: scale(.9);
+transition: all 100ms ease;
+}
+
+.among svg {
+transition: all .5s ease;
+z-index: 2;
+}
+
+.play {
+transition: all .5s ease;
+transition-delay: 300ms;
+}
+
+.among:hover svg {
+transform: scale(3) translate(50%);
+}
+
+.now {
+position: absolute;
+left: 0;
+transform: translateX(-100%);
+transition: all .5s ease;
+z-index: 2;
+}
+
+.among:hover .now {
+transform: translateX(10px);
+transition-delay: 300ms;
+}
+
+.among:hover .play {
+transform: translateX(200%);
+transition-delay: 300ms;
+}
+
+.noticia h3{
+    Word-wrap: break-Word;
+    width: 200px;
+}
+
+.noticia p{
+    Word-wrap: break-Word;
+    width: 200px;
+}
+
+.vacio{
+    background-color: #cc2b2b;
+    text-align: center;
+    width: 400px;
+    height: 60px;
+    left: 400px;
+    position: relative;
+    margin-bottom: 100px;
+    border-radius: 20px;
+}
+
+.fa-triangle-exclamation{
+    font-size: 20px;
+    color: white;
+}
+
+
+/* adactacion a dispositivos */
+@media (max-width: 750px) {
+    .seccion-perfil-usuario .lista-datos {
+        width: 100%;
+    }
+
+    .seccion-perfil-usuario .perfil-usuario-portada,
+    .seccion-perfil-usuario .perfil-usuario-body {
+        width: 95%;
+    }
+
+}
